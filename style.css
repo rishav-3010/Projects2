@@ -1,0 +1,454 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #333;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+#home {
+    text-align: center;
+    padding: 50px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+nav a {
+    margin: 10px 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+.banner {
+    position: relative;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+    height: 600px;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.banner-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+.banner-text {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Brand Section */
+.brand-section {
+    margin-bottom: 10px;
+}
+
+.brand {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: white;
+    letter-spacing: 1.5px;
+}
+
+.heading-section {
+    margin-bottom: 30px;
+}
+
+.main-heading {
+    font-size: 4rem;
+    font-weight: 700;
+    margin: 0 0 10px;
+    color: white;
+}
+
+.subheading {
+    font-size: 1.2rem;
+    max-width: 500px;
+    color: white;
+    line-height: 1.5;
+}
+
+/* Call-to-Action Section */
+.cta-section {
+    margin-top: 20px;
+}
+
+.book-now-btn {
+    background-color: #ffcc00;
+    color: #333;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 15px;
+}
+
+.book-now-btn:hover {
+    background-color: #e6b800;
+}
+
+.offer {
+    font-size: 1.2rem;
+    font-weight: bold;
+    background: linear-gradient(45deg, #4CAF50, #FFD700);
+    padding: 10px 20px;
+    border-radius: 50px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: glow 2s infinite;
+    transition: transform 0.3s ease;
+}
+
+.offer:hover {
+    transform: scale(1.1);
+}
+
+.footer-section {
+    margin-top: 20px;
+}
+
+.website {
+    font-size: 1rem;
+    color: #fff;
+}
+
+#gallery_section {
+    padding: 50px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+#gallery_section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.gallery-subtext {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.rooms {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+    padding: 20px 0;
+}
+
+.room-item {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.room-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.room-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.room-item h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.room-item p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.room-item .description {
+    color: #555;
+}
+
+.room-item .availability {
+    color: #28a745;
+    font-weight: bold;
+}
+ 
+#availability_section {
+    padding: 40px;
+    background-color: white;
+    max-width: 800px;
+    margin: 40px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#availability_section h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#availabilityForm {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    text-align: left;
+}
+
+#availabilityForm label {
+    font-size: 1.2rem;
+    color: #555;
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="date"] {
+    padding: 10px;
+    width: 100%;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+#availableRooms {
+    margin-top: 30px;
+}
+
+#availableRooms h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.room {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.room img.room-image {
+    max-width: 150px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.room-details {
+    text-align: left;
+}
+
+.room:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.room h4 {
+    font-size: 1.5rem;
+    color: #333;
+    /* margin-bottom: 10px; */
+}
+
+.room p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #28a745;
+    margin-bottom: 15px;
+}
+
+.room button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.room button:hover {
+    background-color: #0056b3;
+}
+
+#bookingForm {
+    padding: 20px;
+    width: 50%;
+    margin: 0 auto;
+    background-color: #f8f8f8;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: left;
+}
+
+#bookingForm h3 {
+    margin-top: 20px;
+    color: #005f73;
+    font-size: 1.2rem;
+}
+
+#bookingForm h2{
+    margin-top: 20px;
+    color: #005f73;
+    text-align: center;
+    font-size: 2rem;
+
+}
+
+#bookingForm label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #0a9396;
+}
+
+#bookingForm input[type="text"],
+#bookingForm input[type="email"],
+#bookingForm input[type="tel"],
+#bookingForm input[type="date"],
+#bookingForm select {
+
+    padding: 10px;
+    width: 100%;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #f0f4f8;
+}
+
+#bookingForm input[type="text"]:focus,
+#bookingForm input[type="email"]:focus,
+#bookingForm input[type="tel"]:focus,
+#bookingForm input[type="date"]:focus,
+#bookingForm select:focus {
+    outline: none;
+    border-color: #0a9396;
+    background-color: #e0f7f9;
+}
+
+#bookingForm button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #005f73;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 65px;
+}
+
+#bookingForm button[type="submit"]:hover {
+    background-color: #0a9396;
+}
+
+#bookingForm p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #333;
+    font-weight: bold;
+}
+
+#bookingForm #numDays,
+#bookingForm #totalCost {
+    background-color: #e0f7f9;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #0a9396;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}

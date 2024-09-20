@@ -1,0 +1,37 @@
+<!-- availability.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Availability</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="availability.html">Book Now</a>
+        <a href="gallery.html">Room Availability</a>
+    </nav>
+
+    <div id="availability_section">
+        <h2>Check Room Availability Dates First In Room Availability Section </h2>
+        <form id="availabilityForm">
+            <label for="checkin">Check-in Date:</label>
+            <input type="date" id="checkin" required>
+
+            <label for="checkout">Check-out Date:</label>
+            <input type="date" id="checkout" required>
+
+            <button type="submit">Check Availability</button>
+        </form>
+
+        <div id="availableRooms"></div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Luxury Stay Hotels. All rights reserved.</p>
+    </footer>
+
+    <script src="availability.js"></script>
+</body>
+</html>

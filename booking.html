@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Now</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="availability.html">Book Now</a>
+        <a href="gallery.html">Room Availability</a>
+    </nav>
+
+    <!-- Booking Form -->
+    <form id="bookingForm">
+        <h2>Book Your Stay</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" required>
+
+        <h3>Booking Details</h3>
+        <label for="roomType">Room Type:</label>
+        <select id="roomType" required>
+            <option value="deluxe" data-price="6000">Deluxe Room - ₹6000/night</option>
+            <option value="standard" data-price="3500">Standard Room - ₹3500/night</option>
+            <option value="family_suite" data-price="8500">Family Suite - ₹8500/night</option>
+            <option value="single" data-price="2500">Single Room - ₹2500/night</option>
+            <option value="executive" data-price="10000">Executive Room - ₹10000/night</option>
+            <option value="presidential" data-price="20000">Presidential Room - ₹20000/night</option>
+        </select>
+
+        <label for="checkinDate">Check-in Date:</label>
+        <input type="date" id="checkinDate" required>
+
+        <label for="checkoutDate">Check-out Date:</label>
+        <input type="date" id="checkoutDate" required>
+
+        <p id="numDays">Number of days:</p>
+        <p id="totalCost">Total cost:</p>
+        <button type="submit">Proceed to payment</button>
+    </form>
+    <footer>
+        <p>&copy; 2024 Luxury Stay Hotels. All rights reserved.</p>
+    </footer>
+
+    <script src="booking.js"></script>
+</body>
+</html>
